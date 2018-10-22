@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>First Task</title>
+        <link rel="stylesheet" href="CSS/all.min.css">
+        <link rel="stylesheet" href="CSS/bootstrap.min.css">
+        <link rel="stylesheet" href="CSS/style.css">
+  
+  
+        
+    </head>
+    
+    <body onclick="getRowIndex(event)">
+       
+        <div class="parent">
+        
+        <div class="container" style="margin-top: 40px;">
+        
+            <label>Enter Your Text:</label>
+            
+        <form class="form-group text-center">
+            
+      
+            <input id="mainInput" type="text" class="form-control" placeholder="Enter text">
+           
+            <button onclick="addNewValue()" id="addButton" style="padding: 10px 30px;font-size: 20px" type="button" class="btn btn-primary">Add</button>
+            
+        </form>
+            
+        <table id="myTable" class="table table-hover">   
+            </table>  
+            
+          
+            
+            </div><!--container-->
+                
+            <div id="layer" class="text-center">
+            
+            <div id="message">
+                
+                <p>Do you want to delete or edit this item?</p>
+                
+                <button onclick="deleteRow()" id="delButton" style="padding: 10px 25px;font-size: 20px" type="button" class="btn btn-danger">Delete</button>
+                
+                <button onclick="showNewMessage()" id="editButton" style="padding: 10px 30px;font-size: 20px" type="button" class="btn btn-primary">Edit</button>
+                
+                <br><br>
+                
+               <button onclick="closeLayer()" style="padding: 10px 30px;font-size: 20px" type="button" class="btn btn-secondary closeButton">Close</button>
+                
+                </div><!--message-->
+                
+                
+                <div id="newMessage">
+                
+                
+                <input id="newInput" type="text" class="form-control" placeholder="Enter text">
+                
+                <button onclick="editRow()" id="newEditButton" style="padding: 10px 30px;font-size: 20px" type="button" class="btn btn-primary">Edit</button>
+                    
+                <button onclick="closeLayer()" style="padding: 10px 30px;font-size: 20px" type="button" class="btn btn-secondary closeButton">Close</button>
+      
+                
+                </div><!--newMessage-->
+                
+                
+                
+            </div><!--layer-->
+          
+        </div><!--parent-->
+    
+<script src="JS/jquery-3.2.1.min.js"></script>
+<script src="JS/bootstrap.min.js"></script>
+<script src="JS/myJS.js"></script>
+        </body>
+</html>
